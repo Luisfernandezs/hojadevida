@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Luis Ángel Fernández</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Íconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center">
+                <h2>Hoja de Vida</h2>
+            </div>
+            <div class="card-body text-center">
+                <!-- Fotografía -->
+                <img src="chillguy.jpg" alt="Foto de Perfil" class="img-fluid rounded-circle mb-3" width="150">
+                <h3>Luis Ángel Fernández</h3>
+                <p id="descripcion"><em>Estudiante de 4° semestre de tecnología en software con conocimientos en desarrollo web.</em></p>
+                <button class="btn btn-sm btn-secondary" onclick="editarDescripcion()">✏️ Editar Descripción</button>
+
+    
+                <h5 class="mt-4">🎓 Historial Académico</h5>
+                <ul class="list-group" id="historialAcademico">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Tecnólogo en Software - 4° semestre 
+                        <button class="btn btn-danger btn-sm" onclick="eliminarElemento(this)"><i class="bi bi-trash"></i></button>
+                    </li>
+                </ul>
+                <div class="input-group mt-2">
+                    <input type="text" id="nuevoHistorial" class="form-control" placeholder="Ej: Curso en Python">
+                    <button class="btn btn-success" onclick="agregarElemento('historialAcademico', 'nuevoHistorial')">Agregar</button>
+                </div>
+
+                <h5 class="mt-4">💼 Historial Laboral</h5>
+<ul class="list-group" id="historialLaboral">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+         ayudante curso del SENA en desarrollo web
+        <button class="btn btn-danger btn-sm" onclick="eliminarElemento(this)"><i class="bi bi-trash"></i></button>
+    </li>
+</ul>
+<div class="input-group mt-2">
+    <input type="text" id="nuevoTrabajo" class="form-control" placeholder="Ej: Desarrollador Frontend">
+    <button class="btn btn-success" onclick="agregarElemento('historialLaboral', 'nuevoTrabajo')">Agregar</button>
+</div>
+
+                <h5 class="mt-4">🛠️ Habilidades</h5>
+                <ul class="list-group" id="habilidades">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        HTML <button class="btn btn-danger btn-sm" onclick="eliminarElemento(this)"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        CSS <button class="btn btn-danger btn-sm" onclick="eliminarElemento(this)"><i class="bi bi-trash"></i></button>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        JavaScript <button class="btn btn-danger btn-sm" onclick="eliminarElemento(this)"><i class="bi bi-trash"></i></button>
+                    </li>
+                </ul>
+                <div class="input-group mt-2">
+                    <input type="text" id="nuevaHabilidad" class="form-control" placeholder="Ej: React, Node.js">
+                    <button class="btn btn-success" onclick="agregarElemento('habilidades', 'nuevaHabilidad')">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Archivo JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
