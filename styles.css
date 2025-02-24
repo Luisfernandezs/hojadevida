@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.eliminar-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.eliminar-btn:hover {
+    background-color: #c82333;
+}
+
+.input-group button {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    opacity: 0.8;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
+
+.list-group-item {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.btn-warning, .btn-success, .btn-secondary {
+    font-weight: bold;
+}
+
+.input-group input {
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
+
+.img-fluid {
+    border: 3px solid #007bff;
+}
+
+.list-group-item {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5
